@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenith Clicks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carousel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/images/cam.png" type="image/x-icon">
+    <style>
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  
+  background-image: url("/images/bg_img.jpeg");
+
+  width:100%;
+  height: 100vh; 
+  z-index: 9;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  
+}
+.bg:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(/images/rain.png);
+  animation: rain 0.5s linear infinite;
+
+}
+
+
+.content{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  top: 40%;
+  
+  
+  margin: 0 auto;
+  
+  
+  text-align: center;
+
+}
+hr{
+  width: 50%;
+  height: 1.5px;
+  border-radius: 50%;
+  background-color: #f7f4e9;
+}
+.content h2{
+  font-size: 8vw;
+  font-family: 'Cookie', cursive;
+  text-shadow: 3px 3px 4px #0b4141, 4px 4px 6px rgba(0,0,0,0.15);
+  letter-spacing: 3px;
+  font-weight: lighter;
+  
+}
+
+.content p{
+  font-size: 3vw;
+  font-family: 'Poppins', sans-serif;
+  
+  text-shadow: 1px 1px 3px #0b4141, 4px 4px 6px rgba(0,0,0,0.15);
+  
+}
+@keyframes rain {
+    0%{
+      background-position: 0 0;
+    }
+    100%{
+      background-position: 20% 100%;
+    }
+  }
+
+@media (max-width: 650px) {
+  .content h2{
+    font-size: 10vw;
+  }
+  .content p{
+    font-size: 4vw;
+  }
+
+ 
+ 
+
+}
+
+</style>
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+            <img src="/images/cam.png" alt="Logo">
+            <h2 class="logo">Zenith Clicks</h2>
+        </div>
+        <ul class="nav-links">
+            <li><a class="nav-link active" href="#">Home</a></li>
+            <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav> 
+    <div class="bg">
+      <div class="content">
+        <h2 class="logo">Zenith Clicks</h2>
+          <hr>
+          <p>Capturing Life through a Lens</p>
+      </div>
+    </div>
+    <div class="container"></div>
+    
+     
+   <script src="app.js"></script> 
+   <script>
+     snowFall.snow(document.querySelector(".container"),{
+       round:true,
+       minSize: 1,
+       maxSize: 6,
+       shadow: true,
+       flakeCount: 100,
+       flakeColor: "#c7dfea",
+
+     });
+   </script> 
+</body>
+</html>

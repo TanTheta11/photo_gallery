@@ -1,0 +1,151 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #012142;
+    color: white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #0abdb1;
+    font-family: 'Poppins', sans-serif;
+    padding: 0.5em 4em;
+    z-index: 999;
+    
+}
+
+.logo-container h2{
+    font-family: 'Cookie', cursive;
+    color: white;
+    font-size: 42px;
+    text-shadow: 1px 1px 0px #ededed, 4px 4px 0px rgba(0,0,0,0.15);
+    letter-spacing: 2.5px;
+    font-weight: lighter;
+    padding: 0px 15px;
+}
+
+.logo-container{
+    flex: 1;
+}
+
+.logo-container, .nav-links{
+    display: flex;
+}
+
+.nav-links{
+    text-align: right;
+    justify-content: space-around;
+    width: 35%;
+    list-style: none;
+}
+
+.nav-link{
+    color: white;
+    font-size: 22px;
+    letter-spacing: 0.6px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav-link:hover {
+    letter-spacing: 3px; 
+  }
+.active{
+    font-weight: bolder;
+    letter-spacing: 1.2px;
+    
+}
+
+.burger{
+    display: none;
+    /* margin: 0px 5px 0px 15px; */
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+
+
+@media screen and (max-width: 1024px){
+    .nav-links{
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .nav-link{
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #0abdb1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 45%;
+        transform: translateX(100%);
+        transition: transform 0.4s ease-in;
+    } 
+    
+    .nav-links li{
+        opacity: 0;
+    } 
+
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+    .nav-active{
+        transform: translateX(0%);
+    }
+    .logo-container h2{
+        font-size: 38px;
+    }
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}

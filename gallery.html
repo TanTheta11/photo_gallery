@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">  
+    <link rel="shortcut icon" href="/images/cam.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Berkshire+Swash' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+
+    <style>
+      .jlr{
+        margin:0.5vw;
+        margin-top: 5vw;
+        font-size: 0;
+        display: -ms-flexbox;
+        -ms-flexbox-wrap: wrap;
+        -ms-flexbox-direction: column;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        display: -webkit-box;
+        display: flex; 
+      }
+
+      .jlr a{
+        -webkit-box-flex: auto;
+        -ms-flex: auto ;
+        flex: auto;
+        width: 200px;
+        margin: 0.5vw;
+      }
+
+      .jlr a img{
+        width: 100%;
+        height: auto;
+      }
+
+      .jlr_item img:hover {
+        transform: scale(1.2); 
+      }
+      
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+            <img src="/images/cam.png" alt="Logo">
+            <h2 class="logo">Zenith Clicks</h4>
+        </div>
+        <ul class="nav-links">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link active" href="gallery.html">Gallery</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="jlr">
+      <a href="/images/image1.jpeg" data-lightbox="lb1" class="jlr_item"><img src="/images/image1.jpeg" alt=""></a>
+      <a href="/images/image2.jpeg" data-lightbox="lb1" class="jlr_item"><img src="/images/image2.jpeg" alt=""></a>
+      <a href="/images/image3.jpeg" data-lightbox="lb1" class="jlr_item"><img src="/images/image3.jpeg" alt=""></a>
+      <a href="/images/image4.jpeg" data-lightbox="lb1" class="jlr_item"><img src="/images/image4.jpeg" alt=""></a>
+      <a href="/images/image5.jpeg" data-lightbox="lb1" class="jlr_item"><img src="/images/image5.jpeg" alt=""></a>
+      <a href="/images/image6.jpeg" data-lightbox="lb1" class="jlr_item"><img src="/images/image6.jpeg" alt=""></a>
+      <a href="/images/image7.jpeg" data-lightbox="lb1" class="jlr_item"><img src="/images/image7.jpeg" alt=""></a>
+      <a href="/images/image8.jpeg" data-lightbox="lb1" class="jlr_item"><img src="/images/image8.jpeg" alt=""></a>
+      <a href="/images/image9.jpeg" data-lightbox="lb1" class="jlr_item"><img src="/images/image9.jpeg" alt=""></a>
+      <a href="/images/image10.jpeg" data-lightbox="lb1" class="jlr_item"><img src="/images/image10.jpeg" alt=""></a>
+      <a href="/images/image11.jpeg" data-lightbox="lb1" class="jlr_item"><img src="/images/image11.jpeg" alt=""></a>
+      <a href="/images/image12.jpg" data-lightbox="lb1" class="jlr_item"><img src="/images/image12.jpg" alt=""></a>
+      <a href="/images/image13.jpg" data-lightbox="lb1" class="jlr_item"><img src="/images/image13.jpg" alt=""></a>
+      <a href="/images/image14.jpeg" data-lightbox="lb1" class="jlr_item"><img src="/images/image14.jpeg" alt=""></a>
+      <a href="/images/image15.jpeg" data-lightbox="lb1" class="jlr_item"><img src="/images/image15.jpeg" alt=""></a>
+    </div>
+
+    <script src="app.js"></script> 
+      
+    
+</body>
+</html>
